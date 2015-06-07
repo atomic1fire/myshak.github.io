@@ -8,6 +8,7 @@
 # - Cyborgs
 # - Robots
 # - Misc assemblies
+# - Workbench
 # - Basic construction
 # - Advanced construction
 # - Misc fixes
@@ -25,6 +26,7 @@
 # [fix] It's a How2Fix guide.
 # [hack] A hacking guide.
 # [disassemble] A disassembly guide.
+# [Workbench] This requires the workbench to make.
 
 name: Construction
 recipes:
@@ -923,7 +925,30 @@ recipes:
       - !step Install the control interface.
       - !step Add the reinforced glass sheets.
       - !step Optionally, use the paint job kit on the finished MiniPutt.
+# Workbench
 
+  - name: Armor Plates
+    tags: [workbench]
+    ingredients:
+      - Three Floor tiles
+      - Five Rods
+      !step Select armor plate on workbench menu
+      !step add floor tiles to "tile" and rods to "5 rods"
+      !step Press checkmark button to finish.
+      
+name: Heavy Armor
+    Info: 
+      Notes:  
+              This depending on the materials you used will protect against shrapnel and bullets. It will also slow you down.
+    tags: [workbench]
+    ingredients:
+      - Armor Plates
+      - Five Rods
+      !step Select Heavy Armor on workbench menu
+      !step Add armor plates to first column under "armor". Add rods to "rods" column.
+      !step Press checkmark button to finish.
+    
+      
 # Basic construction
 
   - name: Barricades
@@ -1347,3 +1372,4 @@ recipes:
       - Wrench
       - !step Screwdriver
       - !step Wrench
+      
